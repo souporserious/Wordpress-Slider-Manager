@@ -1,0 +1,109 @@
+img {
+	display: block;
+	width: 100%;
+}
+
+.group:before,.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+#oeCaption {
+	line-height: 30px;
+	color: #999;
+	letter-spacing: 1px;
+	margin: -8px 45px 0;
+}
+
+.slide {
+	position: relative;
+	margin: 0 0 20px 20px;
+}
+
+.slider {
+	width: 700px;
+	padding: 15px;
+	border-radius: 10px;
+	border: 1px solid #d3d3d3;
+	background: whiteSmoke;
+	clear: both;
+}
+
+.slide_holder {
+	width: 705px;
+	height: 190px;
+	padding: 15px;
+	border-radius: 10px;
+	border: 2px dashed #d3d3d3;
+	background: #fafafa;
+	margin: 0 0 20px 20px;
+}
+
+.upload_preview {
+	display: block;
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.upload_preview img {
+	border: 1px solid #d3d3d3;
+}
+
+.fields {
+	display: block;
+	float: left;
+	width: 45%;
+	margin-left: 5%;
+	box-sizing: border-box;
+}
+
+.fields > div:not(:last-child) {
+	margin-bottom: 17.5px;
+}
+
+.delete-slide {
+	margin-top: 23px;
+}
+
+.slider input[type="text"] {
+	display: inline-block;
+	width: 83%;
+	padding: 6px;
+}
+
+.slider label {
+	display: inline-block;
+	width: 15%;
+	text-align: right;
+}
+
+.handle {
+	position: absolute;
+	left: -22px;
+	top: 50%;
+	display: block;
+	width: 22px;
+	height: 70px;
+	border-radius: 10px 0 0 10px;
+	background: #d3d3d3;
+	margin-top: -35px;
+	z-index: 1;
+	cursor: move;
+}
+
+.handle::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 68px;
+	border-radius: 10px 0 0 10px;
+	background: url(images/handle.png) whiteSmoke;
+	margin: 1px 0 0 1px;
+	z-index: 2;
+}
